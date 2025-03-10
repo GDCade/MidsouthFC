@@ -1,0 +1,88 @@
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: #323131; 
+}
+
+.topbar{
+    background: #1b1b1b;
+}
+
+.sidebar {
+    width: 280px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -280px;
+    z-index: 1050;
+    background: #323131;
+    color: #fff;
+    transition: all 0.3s;
+    box-shadow: 3px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1040;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    top: 0;
+    left: 0;
+}
+
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+.content {
+    width: 100%;
+    transition: all 0.3s;
+    position: relative;
+    z-index: 1;
+}
+
+.sidebar .sidebar-header {
+    padding: 30px;
+    background: #1b1b1b;
+}
+
+.sidebar ul.components {
+    align-self: auto;
+    border-bottom: 1px solid #1b1b1b;
+}
+
+.sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+.sidebar ul li a {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    display: block;
+    color: #adb5bd;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    color: #9e1b1b;
+    background: #00000000;
+}
+
+.sidebar ul li a i {
+    margin-right: 10px;
+}
+
+.navbar {
+    position: relative;
+    z-index: 1;
+}
