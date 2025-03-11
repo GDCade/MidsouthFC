@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Set first video URL from data attribute
         const streamChannel1 = card.dataset.streamChannel;
-        iframe1.src = `https://player.twitch.tv/?channel=${streamChannel1}&parent=www.midsouthfightclub.com&muted=true`;
+        iframe1.src = `https://player.twitch.tv/?channel=${streamChannel1}&parent=${window.location.hostname}&muted=true`;
         
         videoContainer1.appendChild(iframe1);
         videoCol1.appendChild(videoContainer1);
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Set second video URL from data attribute or use a default
         const streamChannel2 = card.dataset.streamChannel2;
-        iframe2.src = `https://player.twitch.tv/?channel=${streamChannel2}&parent=www.midsouthfightclub.com&muted=true`;
+        iframe2.src = `https://player.twitch.tv/?channel=${streamChannel2}&parent=${window.location.hostname}&muted=true`;
         
         videoContainer2.appendChild(iframe2);
         videoCol2.appendChild(videoContainer2);
