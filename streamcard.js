@@ -50,12 +50,6 @@ document.addEventListener('DOMContentLoaded', function() {
         // Append the videos row to the card body
         card.querySelector('.card-body').appendChild(videosRow);
         
-        // Update card text to reflect multiple videos
-        const cardText = card.querySelector('.card-text');
-        if (cardText) {
-            cardText.textContent = cardText.textContent.replace('video', 'videos');
-        }
-        
         // Add click event to the card
         card.addEventListener('click', function(e) {
             // Prevent click on buttons/links inside the card from toggling

@@ -61,6 +61,12 @@ body h1, h2, h3, h4, h5, p{
     height: 100%;
     border: 0;
 }
+
+.home-video-container {
+    max-width: 850px;
+    max-height: 478px;
+    margin: 0 auto;
+}
 /*end video stuff*/
 
 .topbar{
