@@ -10,7 +10,23 @@ body h1, h2, h3, h4, h5, p{
 
 .card {
     background-color: #4e4e4e; 
-    border-color: #a0a0a0; 
+    border-color: #dfdfdf; 
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer; /*tactile thing - changes corsor on hover*/
+}
+
+.card-streams {
+    background-color: #4e4e4e; 
+    border-color: #c40b0b; 
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer; /*tactile thing - changes corsor on hover*/
+}
+
+.card-vods {
+    background-color: #4e4e4e; 
+    border-color: #0b46c4; 
     margin-bottom: 20px;
     transition: all 0.3s ease;
     cursor: pointer; /*tactile thing - changes corsor on hover*/

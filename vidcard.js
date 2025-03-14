@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
         videoContainer2.className = 'video-container';
         
         const iframe2 = document.createElement('iframe');
-        iframe2.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+        iframe2.allow = 'autoplay; picture-in-picture';
         iframe2.allowFullscreen = true;
         
         // Set second video URL from data attribute or use a default
