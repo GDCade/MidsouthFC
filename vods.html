@@ -75,47 +75,60 @@
 <div class="container mt-4">
     <div class="row" style="align-items: center; text-align: center;">
         <h1>VODS</h1>
-        <h2 style="margin-top: 3%; margin-bottom: 3%;">This Weeks Matches:</h2>
+        <h5 style="margin-top: 1%;">Vods with only one stream/recording will appear for both teams unless links for seperate stream perspectives are provided.</h5>
 
 
- <!--indiana vs 404 Gods-->
- <div class="date-container" data-start-date="2025-03-01" data-end-date="2025-03-15">
-    <!--video version below-->
-    <div class="card" style="border-color: rgb(35, 109, 247);" data-video-url="https://drive.google.com/file/d/1zwClssxrHcO47QZEbs6kis6pDVZv-NdO/preview" data-video-url2="https://drive.google.com/file/d/1zwClssxrHcO47QZEbs6kis6pDVZv-NdO/preview">
-        <div class="card-body">
-            <h3 class="card-title">Indiana vs 404 Gods</h3>
-            <p class="card-text">3v3: 0-0</p>
-            <p class="card-text">5v5: 0-0</p>
-            <div class="date-indicator">
-                <i class="bi bi-camera-reels"></i> Click for Vods:<br>Streamed on - 3PM EST, Mar 16th, 2025
-            </div id="streamContainer">
-            <!-- Video container will be added here-->
+        <!--Dropdown Selection-->
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-6 mx-auto">
+                    <h2 class="text-center mb-4">Select a Date:</h2>
+                    <select id="dateSelector" class="form-select form-select-lg">
+                        <option value="" selected>Choose a Date...</option>
+                        <option value="March 16th, 2025">March 16th, 2025</option>
+                        <option value="March 30th, 2025">March 30th, 2025</option>
+                    </select>
+                </div>
             </div>
-        </div>
+
+
+            <!--indiana vs 404 Gods-->
+            <div class="date-container" id="date-container" event-date="March 16th, 2025">
+                    <div class="card" style="border-color: rgb(35, 109, 247);" data-video-url="https://www.youtube.com/embed/Kjr1Mipp2_s?si=ESJg9TK1y-Zooj38" data-video-url2="https://www.youtube.com/embed/Kjr1Mipp2_s?si=ESJg9TK1y-Zooj38">
+                        <div class="card-body">
+                            <h3 class="card-title">Indiana vs 404 Gods</h3>
+                            <p class="card-text">3v3: 0-1</p>
+                            <p class="card-text">5v5: 0-2</p>
+                            <div class="date-indicator">
+                                <i class="bi bi-camera-reels"></i> Click for Vods:<br>Streamed on - 3PM EST, Mar 16th, 2025
+                            </div id="streamContainer">
+                            <!-- Video container will be added here-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--music city v ohio-->
+                <div class="date-container" id="date-container" event-date="March 16th, 2025">
+                    <!--video version below-->
+                    <div class="card" style="border-color: rgb(35, 109, 247);" data-video-url="https://drive.google.com/file/d/1zwClssxrHcO47QZEbs6kis6pDVZv-NdO/preview" data-video-url2="https://drive.google.com/file/d/1zwClssxrHcO47QZEbs6kis6pDVZv-NdO/preview">
+                        <div class="card-body">
+                            <h3 class="card-title">Music City v. Ohio</h3>
+                            <p class="card-text">3v3: 0-0</p>
+                            <p class="card-text">5v5: 0-0</p>
+                                <div class="date-indicator">
+                                    <i class="bi bi-camera-reels"></i> Click for Vods:<br>Streamed on - 7PM EST, Mar 16th, 2025
+                                </div id="streamContainer">
+                                <!-- Video container will be added here-->
+                                </div>
+                        </div>
+                    </div>
+                </div>
     </div>
 </div>
 
-<!--music city v ohio-->
-<div class="date-container" data-start-date="2025-03-01" data-end-date="2025-03-15">
-    <!--video version below-->
-    <div class="card" style="border-color: rgb(35, 109, 247);" data-video-url="https://drive.google.com/file/d/1zwClssxrHcO47QZEbs6kis6pDVZv-NdO/preview" data-video-url2="https://drive.google.com/file/d/1zwClssxrHcO47QZEbs6kis6pDVZv-NdO/preview">
-        <div class="card-body">
-            <h3 class="card-title">Music City v. Ohio</h3>
-            <p class="card-text">3v3: 0-0</p>
-            <p class="card-text">5v5: 0-0</p>
-            <div class="date-indicator">
-                <i class="bi bi-camera-reels"></i> Click for Vods:<br>Streamed on - 7PM EST, Mar 16th, 2025
-            </div id="streamContainer">
-            <!-- Video container will be added here-->
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-</div>
-</div>
 
 <!--keep this to two data containers per row for sanities sake-->
 <div class="container mt-4">
@@ -123,8 +136,7 @@
 
 
 <!--area 256 vs 404 kings-->
-<div class="date-container" data-start-date="2025-03-01" data-end-date="2025-03-15">
-    <!--video version below-->
+<div class="date-container" id="date-container" event-date="March 16th, 2025">
     <div class="card" style="border-color: rgb(35, 109, 247);" data-video-url="https://drive.google.com/file/d/1zwClssxrHcO47QZEbs6kis6pDVZv-NdO/preview" data-video-url2="https://drive.google.com/file/d/1zwClssxrHcO47QZEbs6kis6pDVZv-NdO/preview">
         <div class="card-body">
             <h3 class="card-title">Area 256 v. 404 Kings</h3>
@@ -140,8 +152,7 @@
 </div>
 
 <!--ScruffyCity vs Louisiana-->
-<div class="date-container" data-start-date="2025-03-01" data-end-date="2025-03-15">
-    <!--video version below-->
+<div class="date-container" id="date-container" event-date="March 16th, 2025">
     <div class="card" style="border-color: rgb(35, 109, 247);" data-video-url="https://drive.google.com/file/d/1zwClssxrHcO47QZEbs6kis6pDVZv-NdO/preview" data-video-url2="https://drive.google.com/file/d/1zwClssxrHcO47QZEbs6kis6pDVZv-NdO/preview">
         <div class="card-body">
             <h3 class="card-title">ScruffyCity vs Louisiana</h3>
@@ -166,7 +177,7 @@
 <!--lil script for sidebar navigation-->
 <script src="sidebarnav.js"></script>
 <!--script to expand cards and display iframe-->
-<script src="vidcard.js"></script>
+<script src="vidcardselect.js"></script>
 
 </body>
 </html>

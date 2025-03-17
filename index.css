@@ -14,27 +14,19 @@ body h1, h2, h3, h4, h5, p{
     margin-bottom: 20px;
     transition: all 0.3s ease;
     cursor: pointer; /*tactile thing - changes corsor on hover*/
+    display: none;
 }
 
-.card-streams {
-    background-color: #4e4e4e; 
-    border-color: #c40b0b; 
-    margin-bottom: 20px;
-    transition: all 0.3s ease;
-    cursor: pointer; /*tactile thing - changes corsor on hover*/
-}
-
-.card-vods {
-    background-color: #4e4e4e; 
-    border-color: #0b46c4; 
-    margin-bottom: 20px;
-    transition: all 0.3s ease;
-    cursor: pointer; /*tactile thing - changes corsor on hover*/
+.card.visible {
+    display: flex;
 }
 
 .card-body{
     color: #ffffff;
     text-align: center;
+}
+#categorySelector {
+    margin-bottom: 30px;
 }
 
 .card:hover {
@@ -44,6 +36,10 @@ body h1, h2, h3, h4, h5, p{
 
 .card.expanded {
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.container{
+    padding-top: 30px;
 }
 
 /* stuff for video containers */

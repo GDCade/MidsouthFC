@@ -1,5 +1,30 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+    const dateSelector = document.getElementById('dateSelector');
+    
+    // Add event listener for date dropdown selection
+    dateSelector.addEventListener('change', function() {
+        const selectedDate = this.value;
+        
+        // Hide all cards first
+        document.querySelectorAll('.card').forEach(card => {
+            card.classList.remove('visible');
+        });
+        
+        // If a date is selected, show cards from that date
+        if (selectedDate) {
+            const dateContainers = document.querySelectorAll(`[event-date="${selectedDate}"]`);
+            dateContainers.forEach(container => {
+                const card = container.querySelector('.card');
+                if (card) {
+                    card.classList.add('visible');
+                }
+            });
+        }
+    });
+
+
+
     const cards = document.querySelectorAll('.card');
     cards.forEach(card => {
         // Create a container div for the videos row
@@ -18,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
         iframe1.allowFullscreen = true;
         
         // Set first video URL from data attribute
-        const videoUrl1 = card.dataset.videoUrl || 'https://www.youtube.com/embed/dQw4w9WgXcQ';
+        const videoUrl1 = card.dataset.videoUrl;
         iframe1.src = videoUrl1;
         
         videoContainer1.appendChild(iframe1);
@@ -36,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
         iframe2.allowFullscreen = true;
         
         // Set second video URL from data attribute or use a default
-        const videoUrl2 = card.dataset.videoUrl2 || 'https://www.youtube.com/embed/jNQXAC9IVRw';
+        const videoUrl2 = card.dataset.videoUrl2;
         iframe2.src = videoUrl2;
         
         videoContainer2.appendChild(iframe2);
