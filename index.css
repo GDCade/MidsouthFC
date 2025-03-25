@@ -42,6 +42,20 @@ body h1, h2, h3, h4, h5, p{
     padding-top: 30px;
 }
 
+.statscontainer{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.statsframe{
+    width: 100%;
+    max-width: 1700px;
+    height: 700px;
+    aspect-ratio: 16 / 9;
+    max-height: 80vh;
+}
+
 /* stuff for video containers */
 .videos-row {
     overflow: hidden;
