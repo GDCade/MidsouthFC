@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     const dateSelector = document.getElementById('dateSelector');
+
+    
     
     // Add event listener for date dropdown selection
     dateSelector.addEventListener('change', function() {
